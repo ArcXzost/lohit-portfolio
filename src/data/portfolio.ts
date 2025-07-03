@@ -1,4 +1,3 @@
-
 import {
   Github,
   Linkedin,
@@ -75,23 +74,18 @@ export const projects = [
     github: "https://github.com/ArcXzost/FileSyS-CAS",
   },
   {
-    title: "Siemens IoT Security Framework",
+    title: "Inventark: Smart Inventory Management System with Predictive Analytics",
     description:
-      "Engineered a DDoS-resilient IoT security framework in C++ with a memory footprint under 512KB, featuring multi-layer replay protection, interface failover, and rate limiting, achieving 99.7% uptime on 50+ edge devices.",
-    technologies: ["C++", "IoT", "Security", "Embedded Systems"],
+      "Developed a scalable Android app using Kotlin for real-time inventory tracking, reducing stockouts by 30% and excess inventory by 20%. Integrated ML models for demand forecasting, improving accuracy by 95% and decision-making speed by 40% with predictive analytics.",
+    technologies: ["Kotlin", "Android", "Machine Learning", "Predictive Analytics"],
+    github: "https://github.com/ArcXzost/inventory-management-system",
   },
   {
-    title: "Multi-Database API Wrapper Service",
+    title: "Cognito-LDAP Federated Identity Management System",
     description:
-      "Developed a comprehensive REST API wrapper service for PostgreSQL, Azure SQL, and Snowflake using FastAPI, with integrated workflow scheduling via Airflow, enhancing SaaS model efficiency by 40%.",
-    technologies: [
-      "Python",
-      "FastAPI",
-      "Airflow",
-      "Terraform",
-      "AWS",
-      "Cloudflare",
-    ],
+      "Implemented Web Identity Federation by integrating Google OAuth with AWS Cognito to exchange credentials, leading to a 50% reduction in access control setup time, ensuring secure access to S3 bucket resources. Optimized LDAP for credential search efficiency, increasing granularity of role-based access by 50%.",
+    technologies: ["AWS Cognito", "Google OAuth", "LDAP", "S3", "Identity Federation"],
+    github: "https://github.com/ArcXzost/cognito-ldap-federation",
   },
 ];
 
@@ -104,7 +98,7 @@ export const experience = [
       "Engineered a DDoS-resilient IoT security framework using C++ with a memory footprint < 512KB, providing multi-layer replay protection, interface failover, rate limiting, and resource-bounded connection pooling, achieving 99.7% uptime across 50+ edge devices.",
       "Implemented Integrity and health monitoring modules, reducing incident response time by 80% through automated alert prioritization and anomaly correlation on resource-constrained hardware.",
     ],
-    technologies: ["C++"],
+    technologies: ["C++", "Distributed Systems", "Concurrency", "OpenSSL", "Cryptography"],
   },
   {
     company: "Cogneo Technologies",

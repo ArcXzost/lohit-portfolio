@@ -63,16 +63,17 @@ const Navigation = () => {
     >
       <div className="container">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link 
-            href="#hero" 
-            className="flex items-center space-x-2 text-xl font-bold text-white hover:text-blue-400 transition-colors"
-          >
-            <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg">
-              <Code2 className="h-5 w-5 text-white" />
-            </div>
-            <span className="gradient-text">Lohit Majumder</span>
-          </Link>
+          {/* Logo - Fixed to left */}
+          <div className="flex-shrink-0">
+            <Link 
+              href="#hero" 
+              className="flex items-center text-xl font-bold text-white hover:text-blue-400 transition-colors"
+            >
+              <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg">
+                <Code2 className="h-5 w-5 text-white" />
+              </div>
+            </Link>
+          </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
