@@ -55,10 +55,11 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 1.0 }}
             className="text-lg sm:text-xl leading-relaxed text-slate-300 max-w-2xl mx-auto mb-12"
           >
-            I'm a passionate Computer Science student specializing in{" "}
-            <span className="text-blue-400 font-semibold">full-stack development</span> and{" "}
-            <span className="text-purple-400 font-semibold">cloud technologies</span>.
-            Currently building innovative solutions at IIIT Guwahati.
+            I enjoy building things that scale and last. My interests span{" "}
+            <span className="text-blue-400 font-semibold">web technologies</span> ,{" "}
+            <span className="text-violet-400 font-semibold">cloud automation</span> and {" "}
+            <span className="text-purple-400 font-semibold">the latest in AI </span>.
+            If it's new, fast, or clever, I'm probably already exploring it.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -77,7 +78,7 @@ const Hero = () => {
             </Link>
             
             <a
-              href="/resume.pdf"
+              href="/lohit_majumder_resume.pdf"
               download
               className="btn-secondary group"
             >

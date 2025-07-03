@@ -66,7 +66,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Assam, India',
+      value: 'Kolkata, India',
       href: '#',
       color: 'from-purple-500 to-pink-500',
     },

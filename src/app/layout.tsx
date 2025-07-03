@@ -16,22 +16,22 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Lohit Majumder | Full-Stack Developer & Cloud Engineer",
-  description: "Computer Science & Engineering student at IIIT Guwahati specializing in full-stack development, cloud technologies, and innovative solutions. Experience with Go, Python, AWS, and modern web frameworks.",
+  description: "Computer Science & Engineering Graduate from IIIT Guwahati specializing in full-stack development, cloud technologies, and innovative solutions. Experience with Go, Python, AWS, and modern web frameworks.",
   keywords: ["Lohit Majumder", "Full-Stack Developer", "Cloud Engineer", "IIIT Guwahati", "Computer Science", "Go", "Python", "AWS", "React", "Next.js"],
   authors: [{ name: "Lohit Majumder" }],
   creator: "Lohit Majumder",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://lohitmajumder.dev",
+    url: "",
     title: "Lohit Majumder | Full-Stack Developer & Cloud Engineer",
-    description: "Computer Science & Engineering student at IIIT Guwahati specializing in full-stack development, cloud technologies, and innovative solutions.",
+    description: "Computer Science & Engineering Graduate from IIIT Guwahati specializing in full-stack development, cloud technologies, and innovative solutions.",
     siteName: "Lohit Majumder Portfolio",
   },
   twitter: {
     card: "summary_large_image",
     title: "Lohit Majumder | Full-Stack Developer & Cloud Engineer",
-    description: "Computer Science & Engineering student at IIIT Guwahati specializing in full-stack development, cloud technologies, and innovative solutions.",
+    description: "Computer Science & Engineering Graduate from IIIT Guwahati specializing in full-stack development, cloud technologies, and innovative solutions.",
   },
   robots: {
     index: true,

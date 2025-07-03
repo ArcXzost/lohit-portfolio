@@ -7,8 +7,8 @@ import {
 
 export const personalInfo = {
   name: "Lohit Majumder",
-  title: "Computer Science & Engineering Student | Full-Stack Developer | Cloud Enthusiast",
-  bio: "I'm a passionate Computer Science and Engineering student at the Indian Institute of Information Technology Guwahati, with a strong foundation in full-stack development and cloud technologies. With a CGPA of 8.18/10, I combine academic excellence with practical experience to build innovative solutions. My journey includes impactful internships at leading companies like Siemens and Cogneo Technologies, where I've developed everything from DDoS-resilient IoT security frameworks to comprehensive API wrapper services. I thrive on solving complex problems using cutting-edge technologies like Go, Python, and modern cloud platforms. I believe in creating technology that not only works flawlessly but also makes a meaningful impact. Whether it's optimizing system performance, designing scalable architectures, or building user-friendly interfaces, I'm driven by the desire to turn ideas into elegant, robust solutions.",
+  title: "Software Engineer | Distributed Systems & AI Enthusiast",
+  bio: "Fresh graduate from IIIT Guwahati with a knack for building systems that don't break under pressure. I've spent my time crafting DDoS-resilient IoT frameworks, taming distributed file systems, and making databases talk to each other through elegant APIs. My toolkit spans from low-level C++ optimizations to cloud-native architectures, with a particular fondness for Go's simplicity and Python's versatility. Whether it's shaving milliseconds off response times or designing fault-tolerant distributed systems, I find joy in solving problems that matter. My internships at Siemens and Cogneo taught me that great software isn't just about clean code—it's about building solutions that scale, perform, and actually solve real problems.",
   contact: {
     email: "majumderlohit@gmail.com",
     phone: "+91 8777405760",

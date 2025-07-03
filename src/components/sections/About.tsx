@@ -10,12 +10,12 @@ const About = () => {
     {
       icon: GraduationCap,
       title: "IIIT Guwahati",
-      subtitle: "B.Tech CSE • CGPA: 8.18/10",
+      subtitle: "B.Tech CSE",
     },
     {
       icon: Award,
       title: "Technical Excellence",
-      subtitle: "Siemens & Cogneo Intern",
+      subtitle: "Worked with Industry Leaders and innovative startups",
     },
     {
       icon: MapPin,
@@ -67,9 +67,10 @@ const About = () => {
                 className="prose prose-lg prose-slate max-w-none"
               >
                 <p className="text-slate-300 leading-relaxed mb-6">
-                  I'm a passionate Computer Science and Engineering student at the{" "}
-                  <span className="text-blue-400 font-semibold">Indian Institute of Information Technology Guwahati</span>,
-                  where I maintain a strong academic record with a CGPA of 8.18/10.
+                  Did my {" "}
+                  <span className="text-purple-500 font-semibold">BTECH </span>
+                  in Computer Science and Engineering from {" "}
+                  <span className="text-blue-400 font-semibold">Indian Institute of Information Technology Guwahati</span>.
                 </p>
                 <p className="text-slate-300 leading-relaxed mb-6">
                   My journey combines academic excellence with hands-on experience through impactful internships at{" "}
@@ -109,7 +110,7 @@ const About = () => {
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
                 <a
-                  href="/resume.pdf"
+                  href="/lohit_majumder_resume.pdf"
                   download
                   className="btn-primary group inline-flex"
                 >

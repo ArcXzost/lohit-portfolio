@@ -64,7 +64,7 @@ const Navigation = () => {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo - Fixed to left */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 -ml-32">
             <Link 
               href="#hero" 
               className="flex items-center text-xl font-bold text-white hover:text-blue-400 transition-colors"
@@ -76,7 +76,7 @@ const Navigation = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-1 -mr-32">
             {navItems.map((item) => (
               <button
                 key={item.name}
