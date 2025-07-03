@@ -1,3 +1,4 @@
+
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
 import { contactFormSchema } from '@/lib/validations';
@@ -18,7 +19,7 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_TO,
-      subject: `New message from ${name}`,
+      subject: `New message from ${name} ${email}`,
       text: message,
     };
 
