@@ -115,12 +115,12 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator - moved down by 20px */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 2 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
       >
         <div className="w-6 h-10 border-2 border-slate-400 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-slate-400 rounded-full mt-2 animate-bounce" />
