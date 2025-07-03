@@ -13,7 +13,6 @@ const FloatingShapes = () => {
     if (!mounted) return [];
     
     const shapeArray = [];
-    // Use a seed-based approach to ensure consistent results
     const seed = 12345;
     let random = seed;
     
@@ -22,19 +21,23 @@ const FloatingShapes = () => {
       return random / 233280;
     };
 
-    for (let i = 0; i < 15; i++) {
-      const yOffset = seededRandom() * 100 - 50;
-      const xOffset = seededRandom() * 100 - 50;
+    for (let i = 0; i < 20; i++) {
+      const yOffset = seededRandom() * 60 - 30;
+      const xOffset = seededRandom() * 60 - 30;
+      const rotation = seededRandom() * 360;
+      
       shapeArray.push({
         id: i,
-        type: seededRandom() > 0.5 ? "circle" : "square",
+        type: seededRandom() > 0.6 ? "circle" : seededRandom() > 0.3 ? "square" : "triangle",
         left: `${seededRandom() * 100}%`,
         top: `${seededRandom() * 100}%`,
-        size: seededRandom() * 20 + 10,
-        duration: seededRandom() * 10 + 10,
-        delay: seededRandom() * 5,
+        size: seededRandom() * 30 + 15,
+        duration: seededRandom() * 15 + 10,
+        delay: seededRandom() * 8,
         yOffset,
         xOffset,
+        rotation,
+        opacity: seededRandom() * 0.3 + 0.1,
       });
     }
     return shapeArray;
@@ -49,17 +52,28 @@ const FloatingShapes = () => {
       {shapes.map((shape) => (
         <motion.div
           key={shape.id}
-          className={`absolute ${shape.type === "circle" ? "rounded-full" : ""}`}
+          className={`absolute ${
+            shape.type === "circle" 
+              ? "rounded-full" 
+              : shape.type === "triangle"
+              ? "triangle"
+              : "rounded-lg"
+          }`}
           style={{
             left: shape.left,
             top: shape.top,
             width: shape.size,
             height: shape.size,
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            background: shape.type === "triangle" 
+              ? "transparent"
+              : `linear-gradient(135deg, rgba(59, 130, 246, ${shape.opacity}), rgba(147, 51, 234, ${shape.opacity * 0.8}))`,
+            opacity: shape.opacity,
           }}
           animate={{
             y: [0, shape.yOffset, 0],
             x: [0, shape.xOffset, 0],
+            rotate: [0, shape.rotation, 0],
+            scale: [1, 1.1, 1],
           }}
           transition={{
             duration: shape.duration,
@@ -68,7 +82,18 @@ const FloatingShapes = () => {
             ease: "easeInOut",
             delay: shape.delay,
           }}
-        />
+        >
+          {shape.type === "triangle" && (
+            <div
+              className="w-0 h-0"
+              style={{
+                borderLeft: `${shape.size / 2}px solid transparent`,
+                borderRight: `${shape.size / 2}px solid transparent`,
+                borderBottom: `${shape.size}px solid rgba(236, 72, 153, ${shape.opacity})`,
+              }}
+            />
+          )}
+        </motion.div>
       ))}
     </div>
   );
