@@ -59,7 +59,7 @@ const Hero = () => {
             <span className="text-blue-400 font-semibold">web technologies</span> ,{" "}
             <span className="text-violet-400 font-semibold">cloud automation</span> and {" "}
             <span className="text-purple-400 font-semibold">the latest in AI </span>.
-            If it's new, fast, or clever, I\'m probably already exploring it.
+            If it's new, fast, or clever, I'm probably already exploring it.
           </motion.p>
 
           {/* CTA Buttons */}
